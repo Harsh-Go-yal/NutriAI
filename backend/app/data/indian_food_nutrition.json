@@ -1,0 +1,306 @@
+[
+  {
+    "name": "Roti / Chapati (Wheat)",
+    "portion_g": 100,
+    "calories": 297,
+    "protein_g": 11,
+    "carbs_g": 60,
+    "fat_g": 2
+  },
+  {
+    "name": "White Rice (Boiled)",
+    "portion_g": 100,
+    "calories": 130,
+    "protein_g": 2.7,
+    "carbs_g": 28,
+    "fat_g": 0.3
+  },
+  {
+    "name": "Brown Rice (Boiled)",
+    "portion_g": 100,
+    "calories": 112,
+    "protein_g": 2.6,
+    "carbs_g": 24,
+    "fat_g": 0.9
+  },
+  {
+    "name": "Toor Dal / Pigeon Pea (Cooked)",
+    "portion_g": 100,
+    "calories": 110,
+    "protein_g": 6,
+    "carbs_g": 19,
+    "fat_g": 1
+  },
+  {
+    "name": "Moong Dal (Cooked)",
+    "portion_g": 100,
+    "calories": 105,
+    "protein_g": 7,
+    "carbs_g": 19,
+    "fat_g": 0.5
+  },
+  {
+    "name": "Masoor Dal (Cooked)",
+    "portion_g": 100,
+    "calories": 116,
+    "protein_g": 9,
+    "carbs_g": 20,
+    "fat_g": 0.4
+  },
+  {
+    "name": "Rajma (Kidney Beans, Cooked)",
+    "portion_g": 100,
+    "calories": 127,
+    "protein_g": 9,
+    "carbs_g": 23,
+    "fat_g": 0.5
+  },
+  {
+    "name": "Chole / Chickpeas (Cooked)",
+    "portion_g": 100,
+    "calories": 164,
+    "protein_g": 9,
+    "carbs_g": 27,
+    "fat_g": 2.6
+  },
+  {
+    "name": "Paneer (Cottage Cheese)",
+    "portion_g": 100,
+    "calories": 296,
+    "protein_g": 18,
+    "carbs_g": 3,
+    "fat_g": 23
+  },
+  {
+    "name": "Low Fat Paneer",
+    "portion_g": 100,
+    "calories": 90,
+    "protein_g": 11,
+    "carbs_g": 2,
+    "fat_g": 4
+  },
+  {
+    "name": "Chicken Breast (Cooked, No Skin)",
+    "portion_g": 100,
+    "calories": 165,
+    "protein_g": 31,
+    "carbs_g": 0,
+    "fat_g": 3.6
+  },
+  {
+    "name": "Chicken Curry",
+    "portion_g": 100,
+    "calories": 130,
+    "protein_g": 12,
+    "carbs_g": 5,
+    "fat_g": 7
+  },
+  {
+    "name": "Egg (Boiled)",
+    "portion_g": 50,
+    "calories": 77,
+    "protein_g": 6.3,
+    "carbs_g": 0.6,
+    "fat_g": 5.3
+  },
+  {
+    "name": "Egg White (Boiled)",
+    "portion_g": 33,
+    "calories": 17,
+    "protein_g": 3.6,
+    "carbs_g": 0.2,
+    "fat_g": 0
+  },
+  {
+    "name": "Fish Curry (Rohu/Katla)",
+    "portion_g": 100,
+    "calories": 120,
+    "protein_g": 14,
+    "carbs_g": 4,
+    "fat_g": 5
+  },
+  {
+    "name": "Mutton Curry",
+    "portion_g": 100,
+    "calories": 180,
+    "protein_g": 15,
+    "carbs_g": 3,
+    "fat_g": 12
+  },
+  {
+    "name": "Potato / Aloo (Boiled)",
+    "portion_g": 100,
+    "calories": 87,
+    "protein_g": 1.9,
+    "carbs_g": 20,
+    "fat_g": 0.1
+  },
+  {
+    "name": "Spinach / Palak (Cooked)",
+    "portion_g": 100,
+    "calories": 23,
+    "protein_g": 3,
+    "carbs_g": 4,
+    "fat_g": 0.3
+  },
+  {
+    "name": "Cabbage (Cooked)",
+    "portion_g": 100,
+    "calories": 23,
+    "protein_g": 1.3,
+    "carbs_g": 5,
+    "fat_g": 0.1
+  },
+  {
+    "name": "Cauliflower / Gobi (Cooked)",
+    "portion_g": 100,
+    "calories": 23,
+    "protein_g": 1.8,
+    "carbs_g": 4,
+    "fat_g": 0.5
+  },
+  {
+    "name": "Bhindi / Okra (Cooked)",
+    "portion_g": 100,
+    "calories": 33,
+    "protein_g": 1.9,
+    "carbs_g": 7.5,
+    "fat_g": 0.2
+  },
+  {
+    "name": "Baingan / Eggplant (Cooked)",
+    "portion_g": 100,
+    "calories": 35,
+    "protein_g": 0.8,
+    "carbs_g": 9,
+    "fat_g": 0.2
+  },
+  {
+    "name": "Lauki / Bottle Gourd (Cooked)",
+    "portion_g": 100,
+    "calories": 14,
+    "protein_g": 0.2,
+    "carbs_g": 3,
+    "fat_g": 0
+  },
+  {
+    "name": "Curd / Dahi (Whole Milk)",
+    "portion_g": 100,
+    "calories": 98,
+    "protein_g": 3.3,
+    "carbs_g": 4.3,
+    "fat_g": 4
+  },
+  {
+    "name": "Milk (Cow)",
+    "portion_g": 100,
+    "calories": 61,
+    "protein_g": 3.2,
+    "carbs_g": 4.8,
+    "fat_g": 3.3
+  },
+  {
+    "name": "Oats (Raw)",
+    "portion_g": 100,
+    "calories": 389,
+    "protein_g": 17,
+    "carbs_g": 66,
+    "fat_g": 7
+  },
+  {
+    "name": "Poha (Flattened Rice, Raw)",
+    "portion_g": 100,
+    "calories": 350,
+    "protein_g": 7,
+    "carbs_g": 77,
+    "fat_g": 1.2
+  },
+  {
+    "name": "Upma",
+    "portion_g": 100,
+    "calories": 140,
+    "protein_g": 3,
+    "carbs_g": 20,
+    "fat_g": 5
+  },
+  {
+    "name": "Idli (Rice & Urad Dal)",
+    "portion_g": 100,
+    "calories": 145,
+    "protein_g": 4,
+    "carbs_g": 30,
+    "fat_g": 0.5
+  },
+  {
+    "name": "Dosa (Plain)",
+    "portion_g": 100,
+    "calories": 168,
+    "protein_g": 4,
+    "carbs_g": 29,
+    "fat_g": 3.7
+  },
+  {
+    "name": "Sambar",
+    "portion_g": 100,
+    "calories": 75,
+    "protein_g": 3,
+    "carbs_g": 12,
+    "fat_g": 2
+  },
+  {
+    "name": "Almonds (Raw)",
+    "portion_g": 100,
+    "calories": 579,
+    "protein_g": 21,
+    "carbs_g": 22,
+    "fat_g": 50
+  },
+  {
+    "name": "Walnuts (Raw)",
+    "portion_g": 100,
+    "calories": 654,
+    "protein_g": 15,
+    "carbs_g": 14,
+    "fat_g": 65
+  },
+  {
+    "name": "Peanuts (Roasted)",
+    "portion_g": 100,
+    "calories": 567,
+    "protein_g": 26,
+    "carbs_g": 16,
+    "fat_g": 49
+  },
+  {
+    "name": "Apple",
+    "portion_g": 100,
+    "calories": 52,
+    "protein_g": 0.3,
+    "carbs_g": 14,
+    "fat_g": 0.2
+  },
+  {
+    "name": "Banana",
+    "portion_g": 100,
+    "calories": 89,
+    "protein_g": 1.1,
+    "carbs_g": 23,
+    "fat_g": 0.3
+  },
+  {
+    "name": "Papaya",
+    "portion_g": 100,
+    "calories": 43,
+    "protein_g": 0.5,
+    "carbs_g": 11,
+    "fat_g": 0.1
+  },
+  {
+    "name": "Guava",
+    "portion_g": 100,
+    "calories": 68,
+    "protein_g": 2.6,
+    "carbs_g": 14,
+    "fat_g": 1
+  }
+]

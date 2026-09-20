@@ -1,0 +1,178 @@
+[
+  {
+    "name": "get_call_context",
+    "description": "Read at the start of every call: which meal slot this is, what is already logged today, and the targets for this meal. Call this before saying anything about food.",
+    "method": "GET",
+    "url": "https://<your-public-tunnel-host>/api/v1/agent/tools/call_context",
+    "headers": {
+      "X-Agent-Key": "<your AGENT_TOOL_KEY from backend/.env>"
+    },
+    "query_parameters": {
+      "phone": {
+        "type": "string",
+        "required": true,
+        "description": "The number being called. Identifies the user; pass the campaign's number variable."
+      },
+      "user_id": {
+        "type": "integer",
+        "required": false,
+        "description": "Optional. Overrides phone lookup."
+      },
+      "slot": {
+        "type": "string",
+        "required": false,
+        "enum": [
+          "breakfast",
+          "lunch",
+          "snack",
+          "dinner"
+        ],
+        "description": "Optional. Inferred from time of day if omitted."
+      },
+      "language": {
+        "type": "string",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "log_meal",
+    "description": "Record what the user just said they ate. Portions must be in grams. Returns 'spoken_reply' -- read that out verbatim.",
+    "method": "POST",
+    "url": "https://<your-public-tunnel-host>/api/v1/agent/tools/log_meal",
+    "headers": {
+      "X-Agent-Key": "<your AGENT_TOOL_KEY from backend/.env>",
+      "Content-Type": "application/json"
+    },
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "phone": {
+          "type": "string",
+          "description": "Number being called; identifies the user."
+        },
+        "user_id": {
+          "type": "integer",
+          "description": "Optional; overrides phone."
+        },
+        "slot": {
+          "type": "string",
+          "enum": [
+            "breakfast",
+            "lunch",
+            "snack",
+            "dinner"
+          ],
+          "description": "Optional; inferred from time of day if omitted."
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Food name in English or common Indian name"
+              },
+              "portion_g": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "name",
+              "portion_g"
+            ]
+          }
+        }
+      },
+      "required": [
+        "items"
+      ]
+    }
+  },
+  {
+    "name": "get_plan_for_slot",
+    "description": "What the user's SAVED meal plan says to eat at a given meal. Call this whenever they ask what they should eat for breakfast, lunch, snack or dinner. Returns 'spoken_reply' -- read it verbatim. Never invent a meal instead of calling this.",
+    "method": "GET",
+    "url": "https://<your-public-tunnel-host>/api/v1/agent/tools/plan_for_slot",
+    "headers": {
+      "X-Agent-Key": "<your AGENT_TOOL_KEY from backend/.env>"
+    },
+    "query_parameters": {
+      "user_id": {
+        "type": "integer",
+        "required": false
+      },
+      "phone": {
+        "type": "string",
+        "required": false
+      },
+      "slot": {
+        "type": "string",
+        "required": false,
+        "enum": [
+          "breakfast",
+          "lunch",
+          "snack",
+          "dinner"
+        ],
+        "description": "Defaults to the current time of day."
+      }
+    }
+  },
+  {
+    "name": "get_day_state",
+    "description": "How much of today's calorie and protein budget is left. Use if the user asks how they are doing. Returns 'spoken_reply' -- read that out verbatim.",
+    "method": "GET",
+    "url": "https://<your-public-tunnel-host>/api/v1/agent/tools/day_state",
+    "headers": {
+      "X-Agent-Key": "<your AGENT_TOOL_KEY from backend/.env>"
+    },
+    "query_parameters": {
+      "phone": {
+        "type": "string",
+        "required": true
+      },
+      "user_id": {
+        "type": "integer",
+        "required": false
+      }
+    }
+  },
+  {
+    "name": "safety_check",
+    "description": "MANDATORY before answering anything involving a medical condition, medication, or pregnancy. If it returns blocking findings, read the action out and stop.",
+    "method": "POST",
+    "url": "https://<your-public-tunnel-host>/api/v1/agent/tools/safety_check",
+    "headers": {
+      "X-Agent-Key": "<your AGENT_TOOL_KEY from backend/.env>",
+      "Content-Type": "application/json"
+    },
+    "body_schema": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "integer"
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "medications": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "question": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "user_id"
+      ]
+    }
+  }
+]
